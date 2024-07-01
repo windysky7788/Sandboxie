@@ -263,7 +263,6 @@
         <translation>该功能可能对兼容性造成影响，因为它阻止了沙盒内的进程向主机进程写入数据，以及启动它们。</translation>
     </message>
     <message>
-        <location filename="Wizards/NewBoxWizard.cpp" line="849"/>
         <source>Prevents the sandboxed window from being captured.</source>
         <translation type="vanished">阻止沙盒化窗口被捕获图像。</translation>
     </message>
@@ -5483,8 +5482,8 @@ Error: %1</source>
     </message>
     <message>
         <location filename="Views/SbieView.cpp" line="1789"/>
-        <source>This sandbox is disabled, do you want to enable it?</source>
-        <translation>此沙盒已禁用，确定启用吗？</translation>
+        <source>This sandbox is disabled or restricted to a group/user, do you want to edit it?</source>
+        <translation>此沙盒已禁用或仅限于特定组/用户，确定要编辑它吗？</translation>
     </message>
 </context>
 <context>
