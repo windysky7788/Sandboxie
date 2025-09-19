@@ -45,7 +45,7 @@ jobs:
             exit 0
           }
           try {
-            $resp = Invoke-RestMethod -Method GET -Uri "https://api.github.com/repos/${{ github.repository }}/releases/latest" -Headers @{ "Accept"="application/vnd.github+json" }
+            $resp = Invoke-RestMethod -Method GET -Uri "https://api.github.com/repos/sandboxie-plus/Sandboxie/releases/latest" -Headers @{ "Accept"="application/vnd.github+json" }
             $hasAsset = $false
             foreach ($a in $resp.assets) {
               if ($a.name -match 'Sandboxie-Plus.*\.exe$') { $hasAsset = $true; break }
